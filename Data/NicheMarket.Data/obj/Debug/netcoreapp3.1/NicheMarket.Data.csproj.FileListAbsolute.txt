@@ -1,0 +1,8 @@
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\bin\Debug\netcoreapp3.1\NicheMarket.Data.deps.json
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\bin\Debug\netcoreapp3.1\NicheMarket.Data.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\bin\Debug\netcoreapp3.1\NicheMarket.Data.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\netcoreapp3.1\NicheMarket.Data.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\netcoreapp3.1\NicheMarket.Data.AssemblyInfo.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\netcoreapp3.1\NicheMarket.Data.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\netcoreapp3.1\NicheMarket.Data.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\netcoreapp3.1\NicheMarket.Data.pdb
