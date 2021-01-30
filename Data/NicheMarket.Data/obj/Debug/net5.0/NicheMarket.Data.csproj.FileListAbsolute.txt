@@ -10,3 +10,6 @@ C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\net5.0\NicheMarket.Data.dll
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\net5.0\ref\NicheMarket.Data.dll
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\net5.0\NicheMarket.Data.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\bin\Debug\net5.0\NicheMarket.Data.Models.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\bin\Debug\net5.0\NicheMarket.Data.Models.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Data\NicheMarket.Data\obj\Debug\net5.0\NicheMarket.Data.csproj.CopyComplete

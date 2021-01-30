@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{A0FD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commun", "Commun", "{D4CD394E-6006-4F4E-9A4D-A9AD802CC312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicheMarket.Data.Models", "Data\NicheMarket.Data.Models\NicheMarket.Data.Models.csproj", "{D7A5B669-C3FA-4349-9FD7-8A4ABC81BA9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicheMarket.Data.Models", "Data\NicheMarket.Data.Models\NicheMarket.Data.Models.csproj", "{D7A5B669-C3FA-4349-9FD7-8A4ABC81BA9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicheMarket.Data", "Data\NicheMarket.Data\NicheMarket.Data.csproj", "{AEFF2120-66A3-4B04-8E2A-AA8DC3302784}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicheMarket.Data", "Data\NicheMarket.Data\NicheMarket.Data.csproj", "{AEFF2120-66A3-4B04-8E2A-AA8DC3302784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicheMarket.Web", "Web\NicheMarket.Web\NicheMarket.Web.csproj", "{C02F4783-7940-4806-B3FD-BB2193C92777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NicheMarket.Web", "Web\NicheMarket.Web\NicheMarket.Web.csproj", "{C02F4783-7940-4806-B3FD-BB2193C92777}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

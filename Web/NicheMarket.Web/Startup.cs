@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NicheMarket.Data;
+using NicheMarket.Data.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +27,9 @@ namespace NicheMarket.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +45,16 @@ namespace NicheMarket.Web
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService<NicheMarketDBContext>())
+                {
+                    dbContext.Database.Migrate();
+                }
+            }
+
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -46,11 +62,15 @@ namespace NicheMarket.Web
 
             app.UseAuthorization();
 
+            app.UseAuthentication();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }

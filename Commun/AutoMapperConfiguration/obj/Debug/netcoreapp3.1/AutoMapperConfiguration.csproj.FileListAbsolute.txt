@@ -1,0 +1,9 @@
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.AssemblyInfo.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\netcoreapp3.1\AutoMapperConfiguration.deps.json
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\netcoreapp3.1\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\netcoreapp3.1\AutoMapperConfiguration.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\netcoreapp3.1\AutoMapperConfiguration.pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nnETM32wjQJp3Dyp27tTJloz6bxv/CeANqneKHl0zn4YekA++qkl5Q02h0VM2CsSwuxrM8VXTAiHwHtlo42LbQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
