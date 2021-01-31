@@ -27,7 +27,7 @@ namespace NicheMarket.Web.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
         }
-
+ 
         [BindProperty]
         public InputModel Input { get; set; }
 

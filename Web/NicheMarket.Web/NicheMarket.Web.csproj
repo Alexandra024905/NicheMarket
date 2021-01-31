@@ -8,6 +8,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -17,8 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\It career- 3\pc-craft\src\Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
     <ProjectReference Include="..\..\Data\NicheMarket.Data.Models\NicheMarket.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\NicheMarket.Data\NicheMarket.Data.csproj" />
+    <ProjectReference Include="..\..\Service\NicheMarket.Services\NicheMarket.Services.csproj" />
   </ItemGroup>
 
 </Project>

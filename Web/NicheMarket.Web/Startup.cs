@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Azure.ServiceBus.Primitives;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,7 +28,6 @@ namespace NicheMarket.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -51,26 +51,50 @@ namespace NicheMarket.Web
                 using (var dbContext = serviceScope.ServiceProvider.GetRequiredService<NicheMarketDBContext>())
                 {
                     dbContext.Database.Migrate();
+
+                    if (dbContext.Roles.Count() == 0)
+                    {
+                        dbContext.Roles.Add(new IdentityRole
+                        {
+                            Name = "Admin",
+                            NormalizedName = "ADMIN",
+                            ConcurrencyStamp = Guid.NewGuid().ToString()
+                        });
+
+                        dbContext.Roles.Add(new IdentityRole
+                        {
+                            Name = "Client",
+                            NormalizedName = "CLIENT",
+                            ConcurrencyStamp = Guid.NewGuid().ToString()
+                        });
+
+                        dbContext.Roles.Add(new IdentityRole
+                        {
+                            Name = "Retailer",
+                            NormalizedName = "RETAILER",
+                            ConcurrencyStamp = Guid.NewGuid().ToString()
+                        });
+                    }
                 }
+
+
+                app.UseHttpsRedirection();
+                app.UseStaticFiles();
+
+                app.UseRouting();
+
+                app.UseAuthorization();
+                app.UseAuthentication();
+
+                app.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllerRoute(
+                        name: "default",
+                        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                    endpoints.MapRazorPages();
+                });
             }
-
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-            app.UseAuthentication();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapRazorPages();
-            });
         }
     }
 }

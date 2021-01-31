@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NicheMarket.Data.Models.Users;
+using NicheMarket.Data.Models;
 
 namespace NicheMarket.Data
 {
