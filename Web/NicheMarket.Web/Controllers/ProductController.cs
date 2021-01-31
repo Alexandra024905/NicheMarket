@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapperConfiguration;
+using Microsoft.AspNetCore.Mvc;
 using NicheMarket.Services;
+using NicheMarket.Services.Models;
+using NicheMarket.Web.Models.BindingModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,22 +12,22 @@ namespace NicheMarket.Web.Controllers
 {
     public class ProductController : Controller
     {
-        private ICloudinaryService cloudinaryService;
-        public ProductController ()
-        { }
+        private readonly ICloudinaryService cloudinaryService;
+        public ProductController(ICloudinaryService cloudinaryService)
+        {
+            this.cloudinaryService = cloudinaryService;
+        }
         public IActionResult Index()
         {
             return View();
         }
 
-
-
-            [HttpPost("//Create/Prpoduct")]
-        public async Task<IActionResult> CreateProduct ()
+        [HttpGet]
+        public IActionResult Create ()
         {
+            return View();
+        }
 
 
-                return Redirect("/");
-            }
     }
 }

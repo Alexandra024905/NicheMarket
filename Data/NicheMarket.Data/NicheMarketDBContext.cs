@@ -12,6 +12,13 @@ namespace NicheMarket.Data
 {
     public class NicheMarketDBContext : IdentityDbContext<NicheMarketUser, IdentityRole, string>
     {
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<Retailer> Retailers { get; set; }
+
+        public DbSet<Client> Clients { get; set; }
+
+        public DbSet<Admin> Admins { get; set; }
         public NicheMarketDBContext(DbContextOptions<NicheMarketDBContext> options)
             : base(options)
         {

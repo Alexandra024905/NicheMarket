@@ -2675,13 +2675,22 @@
       "NicheMarket.Services/1.0.0": {
         "dependencies": {
           "CloudinaryDotNet": "1.14.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+          "Microsoft.AspNetCore.Http.Features": "5.0.2",
+          "NicheMarket.Services.Models": "1.0.0"
         },
         "runtime": {
           "NicheMarket.Services.dll": {}
         },
         "compile": {
           "NicheMarket.Services.dll": {}
+        }
+      },
+      "NicheMarket.Services.Models/1.0.0": {
+        "runtime": {
+          "NicheMarket.Services.Models.dll": {}
+        },
+        "compile": {
+          "NicheMarket.Services.Models.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -5677,6 +5686,11 @@
       "sha512": ""
     },
     "NicheMarket.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NicheMarket.Services.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

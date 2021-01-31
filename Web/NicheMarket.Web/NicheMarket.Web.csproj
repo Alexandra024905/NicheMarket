@@ -22,7 +22,9 @@
     <ProjectReference Include="..\..\..\..\It career- 3\pc-craft\src\Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
     <ProjectReference Include="..\..\Data\NicheMarket.Data.Models\NicheMarket.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\NicheMarket.Data\NicheMarket.Data.csproj" />
-    <ProjectReference Include="..\..\Service\NicheMarket.Services\NicheMarket.Services.csproj" />
+    <ProjectReference Include="..\..\Service\NicheMarket.ProductServices.Models\NicheMarket.Services.Models.csproj" />
+    <ProjectReference Include="..\..\Service\NicheMarket.Servicess\NicheMarket.Services.csproj" />
+    <ProjectReference Include="..\NicheMarket.Web.Models\NicheMarket.Web.Models.csproj" />
   </ItemGroup>
 
 </Project>

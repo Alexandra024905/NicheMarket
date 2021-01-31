@@ -3215,16 +3215,43 @@
       },
       "NicheMarket.Services/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
           "CloudinaryDotNet": "1.14.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+          "Microsoft.AspNetCore.Http.Features": "5.0.2",
+          "NicheMarket.Data": "1.0.0",
+          "NicheMarket.Data.Models": "1.0.0",
+          "NicheMarket.Services.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/NicheMarket.Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/NicheMarket.Services.dll": {}
+        }
+      },
+      "NicheMarket.Services.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/NicheMarket.Services.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NicheMarket.Services.Models.dll": {}
+        }
+      },
+      "NicheMarket.Web.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/NicheMarket.Web.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NicheMarket.Web.Models.dll": {}
         }
       }
     }
@@ -10102,8 +10129,18 @@
     },
     "NicheMarket.Services/1.0.0": {
       "type": "project",
-      "path": "../../Service/NicheMarket.Services/NicheMarket.Services.csproj",
-      "msbuildProject": "../../Service/NicheMarket.Services/NicheMarket.Services.csproj"
+      "path": "../../Service/NicheMarket.Servicess/NicheMarket.Services.csproj",
+      "msbuildProject": "../../Service/NicheMarket.Servicess/NicheMarket.Services.csproj"
+    },
+    "NicheMarket.Services.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Service/NicheMarket.ProductServices.Models/NicheMarket.Services.Models.csproj",
+      "msbuildProject": "../../Service/NicheMarket.ProductServices.Models/NicheMarket.Services.Models.csproj"
+    },
+    "NicheMarket.Web.Models/1.0.0": {
+      "type": "project",
+      "path": "../NicheMarket.Web.Models/NicheMarket.Web.Models.csproj",
+      "msbuildProject": "../NicheMarket.Web.Models/NicheMarket.Web.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10119,7 +10156,9 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.1",
       "NicheMarket.Data >= 1.0.0",
       "NicheMarket.Data.Models >= 1.0.0",
-      "NicheMarket.Services >= 1.0.0"
+      "NicheMarket.Services >= 1.0.0",
+      "NicheMarket.Services.Models >= 1.0.0",
+      "NicheMarket.Web.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10162,8 +10201,14 @@
             "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data\\NicheMarket.Data.csproj": {
               "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data\\NicheMarket.Data.csproj"
             },
-            "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Services\\NicheMarket.Services.csproj": {
-              "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Services\\NicheMarket.Services.csproj"
+            "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.ProductServices.Models\\NicheMarket.Services.Models.csproj": {
+              "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.ProductServices.Models\\NicheMarket.Services.Models.csproj"
+            },
+            "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Servicess\\NicheMarket.Services.csproj": {
+              "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Servicess\\NicheMarket.Services.csproj"
+            },
+            "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj": {
+              "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj"
             }
           }
         }

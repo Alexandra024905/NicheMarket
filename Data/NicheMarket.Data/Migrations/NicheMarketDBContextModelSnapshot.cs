@@ -154,6 +154,33 @@ namespace NicheMarket.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("NicheMarket.Data.Models.Product", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RetailerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("imageURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RetailerId");
+
+                    b.ToTable("Products");
+                });
+
             modelBuilder.Entity("NicheMarket.Data.Models.Users.NicheMarketUser", b =>
                 {
                     b.Property<string>("Id")
@@ -167,6 +194,10 @@ namespace NicheMarket.Data.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -226,6 +257,29 @@ namespace NicheMarket.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("NicheMarketUser");
+                });
+
+            modelBuilder.Entity("NicheMarket.Data.Models.Users.Admin", b =>
+                {
+                    b.HasBaseType("NicheMarket.Data.Models.Users.NicheMarketUser");
+
+                    b.HasDiscriminator().HasValue("Admin");
+                });
+
+            modelBuilder.Entity("NicheMarket.Data.Models.Users.Client", b =>
+                {
+                    b.HasBaseType("NicheMarket.Data.Models.Users.NicheMarketUser");
+
+                    b.HasDiscriminator().HasValue("Client");
+                });
+
+            modelBuilder.Entity("NicheMarket.Data.Models.Users.Retailer", b =>
+                {
+                    b.HasBaseType("NicheMarket.Data.Models.Users.NicheMarketUser");
+
+                    b.HasDiscriminator().HasValue("Retailer");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -277,6 +331,18 @@ namespace NicheMarket.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("NicheMarket.Data.Models.Product", b =>
+                {
+                    b.HasOne("NicheMarket.Data.Models.Users.Retailer", null)
+                        .WithMany("Products")
+                        .HasForeignKey("RetailerId");
+                });
+
+            modelBuilder.Entity("NicheMarket.Data.Models.Users.Retailer", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

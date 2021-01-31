@@ -1,0 +1,12 @@
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\bin\Debug\net5.0\NicheMarket.Services.Models.deps.json
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\bin\Debug\net5.0\NicheMarket.Services.Models.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\bin\Debug\net5.0\ref\NicheMarket.Services.Models.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\bin\Debug\net5.0\NicheMarket.Services.Models.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.AssemblyInfo.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\ref\NicheMarket.Services.Models.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Service\NicheMarket.ProductServices.Models\obj\Debug\net5.0\NicheMarket.Services.Models.pdb

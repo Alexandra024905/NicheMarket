@@ -9,7 +9,8 @@
       "NicheMarket.Services/1.0.0": {
         "dependencies": {
           "CloudinaryDotNet": "1.14.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+          "Microsoft.AspNetCore.Http.Features": "5.0.2",
+          "NicheMarket.Services.Models": "1.0.0"
         },
         "runtime": {
           "NicheMarket.Services.dll": {}
@@ -61,6 +62,11 @@
             "fileVersion": "5.0.120.57516"
           }
         }
+      },
+      "NicheMarket.Services.Models/1.0.0": {
+        "runtime": {
+          "NicheMarket.Services.Models.dll": {}
+        }
       }
     }
   },
@@ -104,6 +110,11 @@
       "sha512": "sha512-qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
+    },
+    "NicheMarket.Services.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
