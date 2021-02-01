@@ -64,15 +64,15 @@ namespace NicheMarket.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,imageURL,Type,Description")] Product product)
+        public async Task<IActionResult> Create(CreateProductBindingModel createProductBindingModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
+                _context.Add(createProductBindingModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(product);
+            return View(createProductBindingModel);
         }
 
         [HttpPost("Products/Create")]

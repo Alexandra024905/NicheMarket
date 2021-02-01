@@ -56,29 +56,6 @@ namespace NicheMarket.Web
                 {
                     dbContext.Database.Migrate();
 
-                    if (dbContext.Roles.Count() == 0)
-                    {
-                        dbContext.Roles.Add(new IdentityRole
-                        {
-                            Name = "Admin",
-                            NormalizedName = "ADMIN",
-                            ConcurrencyStamp = Guid.NewGuid().ToString()
-                        });
-
-                        dbContext.Roles.Add(new IdentityRole
-                        {
-                            Name = "Client",
-                            NormalizedName = "CLIENT",
-                            ConcurrencyStamp = Guid.NewGuid().ToString()
-                        });
-
-                        dbContext.Roles.Add(new IdentityRole
-                        {
-                            Name = "Retailer",
-                            NormalizedName = "RETAILER",
-                            ConcurrencyStamp = Guid.NewGuid().ToString()
-                        });
-                    }
                 }
 
 

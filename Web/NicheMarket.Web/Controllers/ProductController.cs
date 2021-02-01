@@ -23,10 +23,17 @@ namespace NicheMarket.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create ()
+        public IActionResult Create()
         {
             return View();
         }
+
+
+        //[HttpPost]
+        //public async Task<IActionResult> Create()
+        //{
+        //    return View();
+        //}
 
 
     }
