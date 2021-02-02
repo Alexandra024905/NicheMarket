@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\It career- 3\pc-craft\src\Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
+    <ProjectReference Include="..\..\Web\NicheMarket.Web.Models\NicheMarket.Web.Models.csproj" />
+  </ItemGroup>
+
 </Project>

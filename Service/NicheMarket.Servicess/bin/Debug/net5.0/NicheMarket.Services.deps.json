@@ -1093,17 +1093,32 @@
       },
       "NicheMarket.Data.Models/1.0.0": {
         "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
           "Microsoft.AspNetCore.Authorization": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
-          "Microsoft.Extensions.Identity.Stores": "5.0.2"
+          "Microsoft.Extensions.Identity.Stores": "5.0.2",
+          "NicheMarket.Web.Models": "1.0.0"
         },
         "runtime": {
           "NicheMarket.Data.Models.dll": {}
         }
       },
       "NicheMarket.Services.Models/1.0.0": {
+        "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
+          "NicheMarket.Data.Models": "1.0.0"
+        },
         "runtime": {
           "NicheMarket.Services.Models.dll": {}
+        }
+      },
+      "NicheMarket.Web.Models/1.0.0": {
+        "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+        },
+        "runtime": {
+          "NicheMarket.Web.Models.dll": {}
         }
       }
     }
@@ -1837,6 +1852,11 @@
       "sha512": ""
     },
     "NicheMarket.Services.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NicheMarket.Web.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

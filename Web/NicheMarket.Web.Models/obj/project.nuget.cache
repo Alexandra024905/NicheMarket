@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "6adgDHiLfWm714EyoC/B3tLKtgvJJhibUayc5YlvBC1OkqNd2Iz1VCva7rpvOo27QMc7Nh8Tzb95+AlrnUWsyw==",
+  "dgSpecHash": "2rRRFa5MxcK9GzbkwIaNKSI6BZJRZC6tdovMC6J82oyhyWIg2BXEFK5MXxOwoFAB0oQXi4nJhjqQv5vYkwXNaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.2\\microsoft.aspnetcore.http.features.5.0.2.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\Alex\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+    "C:\\Users\\Alex\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

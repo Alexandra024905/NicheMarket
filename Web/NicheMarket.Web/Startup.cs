@@ -1,3 +1,4 @@
+using AutoMapperConfiguration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -6,8 +7,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NicheMarket.Data;
+using NicheMarket.Data.Models;
+using NicheMarket.Data.Models.Users;
 using NicheMarket.Services;
+using NicheMarket.Services.Models;
+using NicheMarket.Web.Models.BindingModels;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace NicheMarket.Web
@@ -39,6 +45,12 @@ namespace NicheMarket.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            AutoMapperConfig.RegisterMappings(
+                typeof(ProductBindingModel).Assembly.GetTypes(),
+                typeof(CreateProductBindingModel).Assembly.GetTypes(),
+                typeof(Product).Assembly.GetTypes(),
+                typeof(ProductServiceModel).Assembly.GetTypes());
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

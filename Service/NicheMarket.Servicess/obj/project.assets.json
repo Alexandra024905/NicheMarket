@@ -1527,9 +1527,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
           "Microsoft.AspNetCore.Authorization": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
-          "Microsoft.Extensions.Identity.Stores": "5.0.2"
+          "Microsoft.Extensions.Identity.Stores": "5.0.2",
+          "NicheMarket.Web.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/NicheMarket.Data.Models.dll": {}
@@ -1541,11 +1543,29 @@
       "NicheMarket.Services.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
+          "NicheMarket.Data.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/NicheMarket.Services.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/NicheMarket.Services.Models.dll": {}
+        }
+      },
+      "NicheMarket.Web.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AutoMapperConfiguration": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.2"
+        },
+        "compile": {
+          "bin/placeholder/NicheMarket.Web.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NicheMarket.Web.Models.dll": {}
         }
       }
     }
@@ -5686,6 +5706,11 @@
       "type": "project",
       "path": "../NicheMarket.ProductServices.Models/NicheMarket.Services.Models.csproj",
       "msbuildProject": "../NicheMarket.ProductServices.Models/NicheMarket.Services.Models.csproj"
+    },
+    "NicheMarket.Web.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Web/NicheMarket.Web.Models/NicheMarket.Web.Models.csproj",
+      "msbuildProject": "../../Web/NicheMarket.Web.Models/NicheMarket.Web.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

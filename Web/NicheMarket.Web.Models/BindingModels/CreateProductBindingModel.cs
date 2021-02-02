@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NicheMarket.Web.Models.BindingModels
 {
-    public class CreateProductBindingModel
+    public class CreateProductBindingModel 
     {
         public string Title { get; set; }
         public IFormFile FileUpload { get; set; }

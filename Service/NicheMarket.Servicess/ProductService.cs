@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using NicheMarket.Data;
 using NicheMarket.Data.Models;
 using AutoMapperConfiguration;
+using Microsoft.EntityFrameworkCore;
+using NicheMarket.Web.Models.BindingModels;
 
 namespace NicheMarket.Services
 {
@@ -17,6 +19,17 @@ namespace NicheMarket.Services
         public ProductService(NicheMarketDBContext dBContext)
         {
             this.dBContext = dBContext;
+        }
+
+        public async Task<List<ProductBindingModel>> AllProducts()
+        {
+            List<ProductBindingModel> products = new List<ProductBindingModel>();
+
+            foreach (var product in dBContext.Products)
+            {
+                products.Add(product.To<ProductBindingModel>());
+            }
+            return products;
         }
 
         public async Task<bool> CreateProduct(ProductServiceModel productServiceModel)
@@ -32,5 +45,33 @@ namespace NicheMarket.Services
             return result;
         }
 
+        public Task<bool> DeleteProduct(ProductServiceModel productServiceModel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ProductBindingModel> DetailsProduct(string id)
+        {
+            Product product = await dBContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+
+            return product.To<ProductBindingModel>();
+        }
+
+        public async Task<bool> EditProduct(ProductServiceModel productServiceModel)
+        {
+            bool result=true;
+            if (productServiceModel.Id != null)
+            {
+                Product product = await dBContext.Products.FirstOrDefaultAsync(p=> p.Id == productServiceModel.Id);
+                result =  dBContext.Products.Update(product) != null;
+                 dBContext.SaveChanges();
+            }
+            return result;
+        }
+
+        public async Task<Product> FindProduct(string id)
+        {
+            return await dBContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        }
     }
 }

@@ -10,3 +10,6 @@ C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\obj\D
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\obj\Debug\net5.0\NicheMarket.Web.Models.dll
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\obj\Debug\net5.0\ref\NicheMarket.Web.Models.dll
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\obj\Debug\net5.0\NicheMarket.Web.Models.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\bin\Debug\net5.0\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\bin\Debug\net5.0\AutoMapperConfiguration.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web.Models\obj\Debug\net5.0\NicheMarket.Web.Models.csproj.CopyComplete

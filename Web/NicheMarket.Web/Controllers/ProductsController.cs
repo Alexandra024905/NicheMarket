@@ -75,19 +75,7 @@ namespace NicheMarket.Web.Controllers
             return View(createProductBindingModel);
         }
 
-        [HttpPost("Products/Create")]
-        public async Task<IActionResult> CreateProduct(ProductBindingModel productBindingModel)
-        {
-            ProductServiceModel serviceModel = productBindingModel.To<ProductServiceModel>();
 
-            string url = await this.cloudinaryService.UploadImage(productBindingModel.FileUpload);
-
-            serviceModel.imageURL = url;
-
-            bool result = await this.productService.CreateProduct(serviceModel);
-
-            return Redirect("/");
-        }
 
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(string id)

@@ -93,7 +93,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
+              },
+              "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -235,7 +242,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
+              },
+              "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data.Models\\NicheMarket.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data.Models\\NicheMarket.Data.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -372,7 +386,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
