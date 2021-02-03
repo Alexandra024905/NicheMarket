@@ -12,9 +12,9 @@ namespace NicheMarket.Services
     public interface IProductService
     {
         Task<bool> CreateProduct(ProductServiceModel productServiceModel);
-        Task<bool> DeleteProduct(ProductServiceModel productServiceModel);
-        Task<bool> EditProduct(ProductServiceModel productServiceModel);
         Task <ProductBindingModel> DetailsProduct(string id);
+        Task<bool> EditProduct(ProductServiceModel productServiceModel);
+        Task<bool> DeleteProduct(string id);
         Task <List<ProductBindingModel>> AllProducts();
     }
 }

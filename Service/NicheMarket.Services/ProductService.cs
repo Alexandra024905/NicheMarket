@@ -46,9 +46,20 @@ namespace NicheMarket.Services
             return result;
         }
 
-        public Task<bool> DeleteProduct(ProductServiceModel productServiceModel)
+        public async Task<bool> DeleteProduct(string id)
         {
-            throw new NotImplementedException();
+            bool result = false;
+            if (id != null)
+            {
+                if (ProductExists(id))
+                {
+                    Product product = await FindProduct(id);
+                    dBContext.Products.Remove(product);
+                    dBContext.SaveChanges();
+                    result = true;
+                }
+            }
+            return result;
         }
 
         public async Task<ProductBindingModel> DetailsProduct(string id)
@@ -60,18 +71,18 @@ namespace NicheMarket.Services
 
         public async Task<bool> EditProduct(ProductServiceModel productServiceModel)
         {
-            bool result=false;
+            bool result = false;
             if (productServiceModel.Id != null)
             {
-                if (ProductExists (productServiceModel.Id))
+                if (ProductExists(productServiceModel.Id))
                 {
-                Product product = productServiceModel.To<Product>();
-                dBContext.Products.Update(product);
-                 dBContext.SaveChanges();
-                return true;
+                    Product product =  productServiceModel.To<Product>();
+                     dBContext.Products.Update(product);
+                    dBContext.SaveChanges();
+                    result = true;
                 }
             }
-            return result;
+            return  result;
         }
 
         public async Task<Product> FindProduct(string id)
