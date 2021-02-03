@@ -5,7 +5,7 @@ using System;
 
 namespace NicheMarket.Services.Models
 {
-    public class ProductServiceModel : IMapTo<Product>, IMapTo<ProductBindingModel>,IMapFrom<CreateProductBindingModel>, IMapTo<ProductServiceModel>
+    public class ProductServiceModel : IMapTo<Product>, IMapTo<ProductBindingModel>,IMapFrom<CreateProductBindingModel>, IMapTo<ProductServiceModel>, IMapFrom<ProductBindingModel>
     {
         public string Id { get; set; }
         public string Title { get; set; }

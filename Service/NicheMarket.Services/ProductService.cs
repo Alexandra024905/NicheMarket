@@ -8,6 +8,7 @@ using NicheMarket.Data.Models;
 using AutoMapperConfiguration;
 using Microsoft.EntityFrameworkCore;
 using NicheMarket.Web.Models.BindingModels;
+using System.Linq;
 
 namespace NicheMarket.Services
 {
@@ -59,12 +60,16 @@ namespace NicheMarket.Services
 
         public async Task<bool> EditProduct(ProductServiceModel productServiceModel)
         {
-            bool result=true;
+            bool result=false;
             if (productServiceModel.Id != null)
             {
-                Product product = await dBContext.Products.FirstOrDefaultAsync(p=> p.Id == productServiceModel.Id);
-                result =  dBContext.Products.Update(product) != null;
+                if (ProductExists (productServiceModel.Id))
+                {
+                Product product = productServiceModel.To<Product>();
+                dBContext.Products.Update(product);
                  dBContext.SaveChanges();
+                return true;
+                }
             }
             return result;
         }
@@ -72,6 +77,11 @@ namespace NicheMarket.Services
         public async Task<Product> FindProduct(string id)
         {
             return await dBContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        }
+
+        private bool ProductExists(string id)
+        {
+            return dBContext.Products.Any(e => e.Id == id);
         }
     }
 }

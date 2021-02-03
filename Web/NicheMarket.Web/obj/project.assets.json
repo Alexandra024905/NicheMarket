@@ -10429,8 +10429,8 @@
     },
     "NicheMarket.Services/1.0.0": {
       "type": "project",
-      "path": "../../Service/NicheMarket.Servicess/NicheMarket.Services.csproj",
-      "msbuildProject": "../../Service/NicheMarket.Servicess/NicheMarket.Services.csproj"
+      "path": "../../Service/NicheMarket.Services/NicheMarket.Services.csproj",
+      "msbuildProject": "../../Service/NicheMarket.Services/NicheMarket.Services.csproj"
     },
     "NicheMarket.Services.Models/1.0.0": {
       "type": "project",
@@ -10507,6 +10507,9 @@
             },
             "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Servicess\\NicheMarket.Services.csproj": {
               "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Servicess\\NicheMarket.Services.csproj"
+            },
+            "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Services\\NicheMarket.Services.csproj": {
+              "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.Services\\NicheMarket.Services.csproj"
             },
             "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj": {
               "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj"
