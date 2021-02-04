@@ -10,11 +10,13 @@ namespace NicheMarket.Web.Models.BindingModels
     {
         public string Id { get; set; }
         public string Title { get; set; }
-        public string FileUpload { get; set; }
+        public IFormFile Image { get; set; }
 
         public string Type { get; set; }
 
         public string Description { get; set; }
+
+        public double Price { get; set; }
 
     }
 }

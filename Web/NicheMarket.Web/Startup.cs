@@ -29,12 +29,13 @@ namespace NicheMarket.Web
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        { 
 
             services.AddSingleton<ICloudinaryService>(instance => new CloudinaryService(
-    this.Configuration["Cloudinary:CloudName"],
-    this.Configuration["Cloudinary:ApiKey"],
-    this.Configuration["Cloudinary:ApiSecret"]));
+            this.Configuration["Cloudinary:CloudName"],
+            this.Configuration["Cloudinary:ApiKey"],
+            this.Configuration["Cloudinary:ApiSecret"]));
+
 
             services.AddTransient<IProductService, ProductService>();
 

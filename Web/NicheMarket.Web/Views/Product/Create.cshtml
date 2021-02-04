@@ -1,4 +1,4 @@
-﻿@model NicheMarket.Web.Models.BindingModels.CreateProductBindingModel
+﻿@model CreateProductBindingModel
 
 @{
     ViewData["Title"] = "Create";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form enctype="multipart/form-data" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
@@ -19,8 +19,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="FileUpload" class="control-label"></label>
-                <input asp-for="FileUpload" class="form-control" />
-                <span asp-validation-for="FileUpload" class="text-danger"></span>
+                <div class="custom-file">
+                    <input asp-for="FileUpload" class="form-control custom-file-input" />
+                    <label class="custom-file-label">Select image:</label>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Type" class="control-label"></label>
@@ -47,5 +49,77 @@
 </div>
 
 @section Scripts {
+
+
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on('change', function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).next('.custom-file-label').html(fileName);
+            })
+        });
+            //(function () {
+            //    function ekUpload() {
+            //        function Init() {
+
+            //            console.log("Upload Initialised");
+
+            //            var fileSelect = document.getElementById('file-upload'),
+            //                fileDrag = document.getElementById('file-drag');
+
+            //            fileSelect.addEventListener('change', fileSelectHandler, false);
+            //        }
+
+            //        function fileDragHover(e) {
+            //            let fileDrag = document.getElementById('file-drag');
+
+            //            e.stopPropagation();
+            //            e.preventDefault();
+
+            //            fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
+            //        }
+
+            //        function fileSelectHandler(e) {
+            //            // Fetch FileList object
+            //            let files = e.target.files || e.dataTransfer.files;
+
+            //            // Cancel event and hover styling
+            //            fileDragHover(e);
+
+            //            // Process all File objects
+            //            for (let i = 0, f; f = files[i]; i++) {
+            //                parseFile(f);
+            //            }
+            //        }
+
+            //        function parseFile(file) {
+            //            let imageName = file.name;
+
+            //            let isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
+            //            if (isGood) {
+            //                document.getElementById('start').classList.add("hidden");
+            //                document.getElementById('notimage').classList.add("hidden");
+            //                // Thumbnail Preview
+            //                document.getElementById('file-image').classList.remove("hidden");
+            //                document.getElementById('file-image').src = URL.createObjectURL(file);
+            //            } else {
+            //                document.getElementById('file-image').classList.add("hidden");
+            //                document.getElementById('notimage').classList.remove("hidden");
+            //                document.getElementById('start').classList.remove("hidden");
+            //                document.getElementById("file-upload-form").reset();
+            //            }
+            //        }
+
+            //        // Check for the various File API support.
+            //        if (window.File && window.FileList && window.FileReader) {
+            //            Init();
+            //        } else {
+            //            document.getElementById('file-drag').style.display = 'none';
+            //        }
+            //    }
+
+            //    ekUpload();
+            //}());
+    </script>
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

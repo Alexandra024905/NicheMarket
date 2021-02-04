@@ -33,7 +33,7 @@ namespace NicheMarket.Web.Controllers
         }
 
 
-        [HttpPost("Product/Create")]
+        [HttpPost]
         public async Task<IActionResult> Create(CreateProductBindingModel createProductBindingModel)
         {
             ProductServiceModel productServiceModel = createProductBindingModel.To<ProductServiceModel>();
@@ -45,9 +45,8 @@ namespace NicheMarket.Web.Controllers
 
             bool result = await productService.CreateProduct(productServiceModel);
 
-            return Redirect("/Product/");
+            return Redirect("/Product");
         }
-
 
 
         [HttpGet]
@@ -60,9 +59,14 @@ namespace NicheMarket.Web.Controllers
         public async Task<IActionResult> Edit(ProductBindingModel product)
         {
             ProductServiceModel serviceModel = product.To<ProductServiceModel>();
+            if (product.Image != null)
+            {
+                string url = await this.cloudinaryService.UploadImage(product.Image);
+                serviceModel.imageURL = url;
+            }
             await productService.EditProduct(serviceModel);
             //redurect To Home.Index
-            return Redirect("/Product/");
+            return Redirect("/Product");
         }
 
         public async Task<IActionResult> Details(string id)
