@@ -40,7 +40,7 @@ namespace NicheMarket.Web.Controllers
             if (createProductBindingModel.FileUpload != null)
             {
                 string url = await this.cloudinaryService.UploadImage(createProductBindingModel.FileUpload);
-                productServiceModel.imageURL = url;
+                productServiceModel.ImageURL = url;
             }
 
             bool result = await productService.CreateProduct(productServiceModel);
@@ -62,7 +62,7 @@ namespace NicheMarket.Web.Controllers
             if (product.Image != null)
             {
                 string url = await this.cloudinaryService.UploadImage(product.Image);
-                serviceModel.imageURL = url;
+                serviceModel.ImageURL = url;
             }
             await productService.EditProduct(serviceModel);
             //redurect To Home.Index

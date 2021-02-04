@@ -10,10 +10,12 @@ namespace NicheMarket.Services.Models
         public string Id { get; set; }
         public string Title { get; set; }
 
-        public string imageURL { get; set; }
+        public string ImageURL { get; set; }
 
         public string Type { get; set; }
 
         public string Description { get; set; }
+
+        public double Price { get; set; }
     }
 }

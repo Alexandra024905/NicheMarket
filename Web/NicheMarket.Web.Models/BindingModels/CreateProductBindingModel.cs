@@ -15,5 +15,7 @@ namespace NicheMarket.Web.Models.BindingModels
         public string Type { get; set; }
 
         public string Description { get; set; }
+
+        public double Price { get; set; }
     }
 }
