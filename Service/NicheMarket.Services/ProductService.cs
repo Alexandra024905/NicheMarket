@@ -39,7 +39,10 @@ namespace NicheMarket.Services
             Product newProduct = productServiceModel.To<Product>();
 
             newProduct.Id = Guid.NewGuid().ToString();
+            if (productServiceModel.ImageURL== "")
+            {
 
+            }
             bool result = await this.dBContext.AddAsync(newProduct) != null;
 
             await this.dBContext.SaveChangesAsync();
