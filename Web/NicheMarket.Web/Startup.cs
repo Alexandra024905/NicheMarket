@@ -12,6 +12,7 @@ using NicheMarket.Data.Models.Users;
 using NicheMarket.Services;
 using NicheMarket.Services.Models;
 using NicheMarket.Web.Models.BindingModels;
+using NicheMarket.Web.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,6 +49,7 @@ namespace NicheMarket.Web
         {
             AutoMapperConfig.RegisterMappings(
                 typeof(ProductBindingModel).Assembly.GetTypes(),
+                typeof(ProductViewModel).Assembly.GetTypes(),
                 typeof(CreateProductBindingModel).Assembly.GetTypes(),
                 typeof(Product).Assembly.GetTypes(),
                 typeof(ProductServiceModel).Assembly.GetTypes());

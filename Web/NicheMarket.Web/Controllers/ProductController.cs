@@ -1,8 +1,10 @@
 ﻿using AutoMapperConfiguration;
 using Microsoft.AspNetCore.Mvc;
+using NicheMarket.Data.Models;
 using NicheMarket.Services;
 using NicheMarket.Services.Models;
 using NicheMarket.Web.Models.BindingModels;
+using NicheMarket.Web.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +54,7 @@ namespace NicheMarket.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
-            return View(await productService.DetailsProduct(id));
+            return View(await productService.GetProduct(id));
         }
 
         [HttpPost]
@@ -65,13 +67,13 @@ namespace NicheMarket.Web.Controllers
                 serviceModel.ImageURL = url;
             }
             await productService.EditProduct(serviceModel);
-            //redurect To Home.Index
+            //To do : redurect To Home.Index
             return Redirect("/Product");
         }
 
         public async Task<IActionResult> Details(string id)
         {
-            ProductBindingModel product = await productService.DetailsProduct(id);
+            ProductViewModel product = await productService.DetailsProduct(id);
             if (product == null)
             {
                 return NotFound();

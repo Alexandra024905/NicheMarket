@@ -1,12 +1,13 @@
 ﻿using AutoMapperConfiguration;
 using Microsoft.AspNetCore.Http;
 using NicheMarket.Web.Models.BindingModels;
+using NicheMarket.Web.Models.ViewModels;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace NicheMarket.Data.Models
 {
-    public class Product : IMapTo<ProductBindingModel>
+    public class Product : IMapTo<ProductBindingModel>, IMapTo<ProductViewModel>
     {
         [Key]
         public string Id { get; set; }

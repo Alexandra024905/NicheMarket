@@ -1,48 +1,32 @@
-﻿@model ProductBindingModel
+﻿@model ProductViewModel
 
 @{
     ViewData["Title"] = "Details";
- 
+
 }
 
 <h1>Details</h1>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-    </dl>
+<div class="row justify-content-center m-3">
+
+    <div class="col-sm-5">
+        <div class="card">
+            <div class="card-header">
+                <h4>@Model.Title</h4>
+                <hr />
+            </div>
+
+            <div class="card-body text-center">
+                <img class="figure-img img-fluid rounded" src="@Url.Content(Model.ImageURL)"  asp-append-version="true" />
+                <h5>Price : @Model.Price</h5>
+                <h5>Type : @Model.Type</h5>
+                <h6>Description : @Model.Description</h6>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>

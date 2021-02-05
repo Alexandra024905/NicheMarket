@@ -9,6 +9,7 @@ using AutoMapperConfiguration;
 using Microsoft.EntityFrameworkCore;
 using NicheMarket.Web.Models.BindingModels;
 using System.Linq;
+using NicheMarket.Web.Models.ViewModels;
 
 namespace NicheMarket.Services
 {
@@ -22,13 +23,13 @@ namespace NicheMarket.Services
             this.dBContext = dBContext;
         }
 
-        public async Task<List<ProductBindingModel>> AllProducts()
+        public async Task<List<ProductViewModel>> AllProducts()
         {
-            List<ProductBindingModel> products = new List<ProductBindingModel>();
+            List<ProductViewModel> products = new List<ProductViewModel>();
 
             foreach (var product in dBContext.Products)
             {
-                products.Add(product.To<ProductBindingModel>());
+                products.Add(product.To<ProductViewModel>());
             }
             return products;
         }
@@ -62,7 +63,13 @@ namespace NicheMarket.Services
             return result;
         }
 
-        public async Task<ProductBindingModel> DetailsProduct(string id)
+        public async Task<ProductViewModel> DetailsProduct(string id)
+        {
+            Product product = await dBContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+
+            return product.To<ProductViewModel>();
+        }
+        public async Task<ProductBindingModel> GetProduct(string id)
         {
             Product product = await dBContext.Products.FirstOrDefaultAsync(p => p.Id == id);
 
@@ -72,17 +79,17 @@ namespace NicheMarket.Services
         public async Task<bool> EditProduct(ProductServiceModel productServiceModel)
         {
             bool result = false;
-            if (productServiceModel.Id != null)
+            if ( productServiceModel.Id != null)
             {
                 if (ProductExists(productServiceModel.Id))
                 {
-                    Product product =  productServiceModel.To<Product>();
-                     dBContext.Products.Update(product);
+                    Product product = productServiceModel.To<Product>();
+                    dBContext.Products.Update(product);
                     dBContext.SaveChanges();
                     result = true;
                 }
             }
-            return  result;
+            return result;
         }
 
         public async Task<Product> FindProduct(string id)

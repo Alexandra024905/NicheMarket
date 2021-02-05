@@ -18,9 +18,10 @@ namespace NicheMarket.Web.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Product");
         }
 
         public IActionResult Privacy()

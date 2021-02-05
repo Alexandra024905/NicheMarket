@@ -23,7 +23,6 @@ C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\ne
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\NicheMarket.Web.TagHelpers.input.cache
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\NicheMarket.Web.TagHelpers.output.cache
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\NicheMarket.Web.RazorCoreGenerate.cache
-C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -214,3 +213,4 @@ C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\ne
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
