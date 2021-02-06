@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using NicheMarket.Services;
 using NicheMarket.Web.Models.ViewModels;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NicheMarket.Web.Controllers
@@ -8,10 +11,15 @@ namespace NicheMarket.Web.Controllers
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
+       
+        private readonly IProductService productService;
+        private readonly IUserService userService;
 
-        public AdministrationController(RoleManager<IdentityRole> roleManager)
+        public AdministrationController(RoleManager<IdentityRole> roleManager, IProductService productService, IUserService userService)
         {
             this.roleManager = roleManager;
+            this.productService = productService;
+            this.userService = userService;
         }
 
         [HttpGet]
@@ -43,6 +51,30 @@ namespace NicheMarket.Web.Controllers
             }
 
             return View(createRoleViewModel);
+        }
+
+        public async Task<IActionResult> Products()
+        {
+            return View( await productService.AllProducts());
+        }
+
+
+        public async Task<IActionResult> Users()
+        {
+            return View(await userService.AllUsers());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditUserRole(string userId, string roleId)
+        {
+            return View(await userService.FindUserRole(userId, roleId));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditUserRole(UserRoleViewModel model)
+        {
+            //add logic
+            return View("/Users");
         }
 
     }

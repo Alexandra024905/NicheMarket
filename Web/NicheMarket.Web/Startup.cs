@@ -1,4 +1,5 @@
 using AutoMapperConfiguration;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -30,7 +31,7 @@ namespace NicheMarket.Web
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        { 
+        {
 
             services.AddSingleton<ICloudinaryService>(instance => new CloudinaryService(
             this.Configuration["Cloudinary:CloudName"],
@@ -39,9 +40,15 @@ namespace NicheMarket.Web
 
 
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUserService, UserService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddMvc(options =>
+            {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+            }).AddXmlSerializerFormatters();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +60,7 @@ namespace NicheMarket.Web
                 typeof(CreateProductBindingModel).Assembly.GetTypes(),
                 typeof(Product).Assembly.GetTypes(),
                 typeof(ProductServiceModel).Assembly.GetTypes());
+
 
             if (env.IsDevelopment())
             {

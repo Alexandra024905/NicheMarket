@@ -1,4 +1,5 @@
 ﻿using AutoMapperConfiguration;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NicheMarket.Data.Models;
 using NicheMarket.Services;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace NicheMarket.Web.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly ICloudinaryService cloudinaryService;
@@ -22,6 +24,7 @@ namespace NicheMarket.Web.Controllers
             this.productService = productService;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await productService.AllProducts());
@@ -76,6 +79,8 @@ namespace NicheMarket.Web.Controllers
             return Redirect("/Product");
         }
 
+       
+        [AllowAnonymous]
         public async Task<IActionResult> Details(string id)
         {
             ProductViewModel product = await productService.DetailsProduct(id);

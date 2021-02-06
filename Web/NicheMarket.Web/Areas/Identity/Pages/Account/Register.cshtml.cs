@@ -80,9 +80,10 @@ namespace NicheMarket.Web.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new NicheMarketUser { Name = Input.Name, UserName = Input.Email, Email= Input.Email };
+                var user = new NicheMarketUser { Name = Input.Name, UserName = Input.Email, Email= Input.Email , RoleName= "Client" };
                 user.Id = Guid.NewGuid().ToString();
                 var result = await _userManager.CreateAsync(user, Input.Password);
+                
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

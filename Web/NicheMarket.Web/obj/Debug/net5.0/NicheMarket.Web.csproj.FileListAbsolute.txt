@@ -214,3 +214,6 @@ C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\ne
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Administration\Products.cshtml.g.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Administration\Users.cshtml.g.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Web\NicheMarket.Web\obj\Debug\net5.0\Razor\Views\Administration\EditUserRole.cshtml.g.cs

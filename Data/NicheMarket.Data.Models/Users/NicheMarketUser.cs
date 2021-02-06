@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapperConfiguration;
 using Microsoft.AspNetCore.Identity;
+using NicheMarket.Web.Models.ViewModels;
 
 namespace NicheMarket.Data.Models.Users
 {
