@@ -1597,7 +1597,7 @@
       },
       "AutoMapperConfiguration/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.1.1"
         },
@@ -1612,7 +1612,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AutoMapperConfiguration": "1.0.0",
           "Microsoft.AspNetCore.Authorization": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
           "Microsoft.Extensions.Identity.Stores": "5.0.2",
@@ -6019,8 +6018,8 @@
     },
     "AutoMapperConfiguration/1.0.0": {
       "type": "project",
-      "path": "../../../../It career- 3/pc-craft/src/Common/AutoMapperConfiguration/AutoMapperConfiguration.csproj",
-      "msbuildProject": "../../../../It career- 3/pc-craft/src/Common/AutoMapperConfiguration/AutoMapperConfiguration.csproj"
+      "path": "../../Commun/AutoMapperConfiguration/AutoMapperConfiguration.csproj",
+      "msbuildProject": "../../Commun/AutoMapperConfiguration/AutoMapperConfiguration.csproj"
     },
     "NicheMarket.Data.Models/1.0.0": {
       "type": "project",

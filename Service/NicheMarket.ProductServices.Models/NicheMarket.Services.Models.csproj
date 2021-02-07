@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\It career- 3\pc-craft\src\Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
+    <ProjectReference Include="..\..\Commun\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
     <ProjectReference Include="..\..\Data\NicheMarket.Data.Models\NicheMarket.Data.Models.csproj" />
   </ItemGroup>
 

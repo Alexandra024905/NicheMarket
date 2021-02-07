@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "NicheMarket.Data.Models/1.0.0": {
         "dependencies": {
-          "AutoMapperConfiguration": "1.0.0",
           "Microsoft.AspNetCore.Authorization": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
           "Microsoft.Extensions.Identity.Stores": "5.0.2",

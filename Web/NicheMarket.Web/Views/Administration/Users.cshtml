@@ -22,6 +22,7 @@
     <tbody>
         @foreach (var item in Model)
         {
+
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.UserName)
@@ -31,7 +32,7 @@
                 </th>
 
                 <td>
-                    <a asp-controller="Administration" asp-action="EditUserRole" asp-route-id="@item.UserId,@item.RoleId">Edit role</a> 
+                    <a asp-controller="Administration" asp-action="EditUserRole" asp-route-userId="@item.UserId" asp-route-roleId="@item.RoleId">Edit role</a> 
                     <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
                 </td>
             </tr>

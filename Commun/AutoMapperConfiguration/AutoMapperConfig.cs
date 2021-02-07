@@ -26,7 +26,7 @@ namespace AutoMapperConfiguration
                         {
                             mapperConfig.CreateMap(fromType, type);
                         }
-                        
+
                         List<Type> mapToTypes = type.GetInterfaces()
                             .Where(i => i.Name.Contains("IMapTo"))
                             .Select(i => i.GetGenericArguments()[0])
@@ -37,9 +37,9 @@ namespace AutoMapperConfiguration
                             mapperConfig.CreateMap(type, toType);
                         }
 
-                        if(typeof(IHaveCustomMappings).IsAssignableFrom(type))
+                        if (typeof(IHaveCustomMappings).IsAssignableFrom(type))
                         {
-                            ((IHaveCustomMappings) Activator.CreateInstance(type)).CreateMappings(mapperConfig);
+                            ((IHaveCustomMappings)Activator.CreateInstance(type)).CreateMappings(mapperConfig);
                         }
                     }
                 }

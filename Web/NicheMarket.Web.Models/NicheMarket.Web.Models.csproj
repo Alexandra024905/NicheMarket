@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\It career- 3\pc-craft\src\Common\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
+    <ProjectReference Include="..\..\Commun\AutoMapperConfiguration\AutoMapperConfiguration.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -4,14 +4,14 @@
     "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Service\\NicheMarket.ProductServices.Models\\NicheMarket.Services.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+    "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj",
         "projectName": "AutoMapperConfiguration",
-        "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj",
+        "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\obj\\",
+        "outputPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,15 +21,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,8 +40,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -94,9 +94,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
-                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
-              },
               "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj": {
                 "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Web\\NicheMarket.Web.Models\\NicheMarket.Web.Models.csproj"
               }
@@ -172,8 +169,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
-                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
+              "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
               },
               "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data.Models\\NicheMarket.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Data\\NicheMarket.Data.Models\\NicheMarket.Data.Models.csproj"
@@ -236,8 +233,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
-                "projectPath": "C:\\Users\\Alex\\Documents\\It career- 3\\pc-craft\\src\\Common\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
+              "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj": {
+                "projectPath": "C:\\Users\\Alex\\Documents\\NicheMarket\\NicheMarket\\Commun\\AutoMapperConfiguration\\AutoMapperConfiguration.csproj"
               }
             }
           }
