@@ -1,0 +1,12 @@
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\net5.0\AutoMapperConfiguration.deps.json
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\net5.0\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\net5.0\ref\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\bin\Debug\net5.0\AutoMapperConfiguration.pdb
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.csprojAssemblyReference.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.AssemblyInfo.cs
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\ref\AutoMapperConfiguration.dll
+C:\Users\Alex\Documents\NicheMarket\NicheMarket\Commun\AutoMapperConfiguration\obj\Debug\net5.0\AutoMapperConfiguration.pdb

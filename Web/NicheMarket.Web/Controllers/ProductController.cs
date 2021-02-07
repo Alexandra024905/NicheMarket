@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace NicheMarket.Web.Controllers
 {
-    [Authorize]
+   // [Authorize]
     public class ProductController : Controller
     {
         private readonly ICloudinaryService cloudinaryService;
@@ -24,7 +24,7 @@ namespace NicheMarket.Web.Controllers
             this.productService = productService;
         }
 
-        [AllowAnonymous]
+      //  [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await productService.AllProducts());
@@ -80,7 +80,7 @@ namespace NicheMarket.Web.Controllers
         }
 
        
-        [AllowAnonymous]
+      //  [AllowAnonymous]
         public async Task<IActionResult> Details(string id)
         {
             ProductViewModel product = await productService.DetailsProduct(id);

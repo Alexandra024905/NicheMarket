@@ -14,6 +14,7 @@ namespace NicheMarket.Web.Controllers
        
         private readonly IProductService productService;
         private readonly IUserService userService;
+      
 
         public AdministrationController(RoleManager<IdentityRole> roleManager, IProductService productService, IUserService userService)
         {
@@ -71,11 +72,17 @@ namespace NicheMarket.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditUserRole(UserRoleViewModel model)
+        public async Task<IActionResult> EditUserRole(UserRoleViewModel userRoleViewModel)
         {
-            //add logic
-            return View("/Users");
+           await userService.EditUserRole(userRoleViewModel);
+            return Redirect ("/Administration/Users");
         }
 
+        [HttpGet]
+        public async Task<IActionResult> DeleteUser(string userId)
+        {
+            await userService.DeleteUser(userId);
+            return Redirect("/Administration/Users");
+        }
     }
 }

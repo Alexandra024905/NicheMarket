@@ -11,8 +11,8 @@ namespace NicheMarket.Services
     public interface IUserService
     {
         Task <IEnumerable<UserRoleViewModel>> AllUsers();
-        Task<bool> EditUserRole();
-
+        Task<bool> EditUserRole(UserRoleViewModel userRoleViewModel);
+        Task<bool> DeleteUser(string id);
         Task<UserRoleViewModel> FindUserRole(string userId, string roleId);
 
     }
